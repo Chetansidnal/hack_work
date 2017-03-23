@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<launch>
+
+ <!-- Stage node with "rooms" world and ground truth map publishing -->
+ <include file="$(find youbot_gazebo_robot)/launch/youbot.launch">
+
+  
+  
+ </include>
+
+ <node pkg="test1" type="mover_left_right_server" name="mover_left_right_server"/>
+ <node pkg="test1" type="estart_estop_server" name="estart_estop_server"/>
+<node pkg="test1" type="event1" name="event1"/> 
+
+</launch>
